@@ -1,0 +1,11 @@
+# deployment: 
+#  imageRepo: siva3150/shipping 
+#  imageVersion: v1 
+# service: 
+#  servicePort: 8080 # default value
+
+deployment: 
+ imageRepo: 445567085619.dkr.ecr.us-east-1.amazonaws.com/roboshop/shipping 
+ imageVersion: IMAGE_VERSION 
+service: 
+ servicePort: 8080 # default value
