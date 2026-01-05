@@ -48,14 +48,14 @@ spec:
         httpGet:
           path: /health
           port: liveness-port
-        initialDelaySeconds: 60
+        #initialDelaySeconds: 60
         failureThreshold: 1
         periodSeconds: 100
       livenessProbe:
         httpGet:
           path: /health
           port: liveness-port
-        initialDelaySeconds: 60
+        #initialDelaySeconds: 60
         failureThreshold: 1
         periodSeconds: 100
       resources:
