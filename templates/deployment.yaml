@@ -49,15 +49,15 @@ spec:
           path: /health
           port: liveness-port
         initialDelaySeconds: 60
-        failureThreshold: 1
-        periodSeconds: 100
+        failureThreshold: 6
+        periodSeconds: 10
       livenessProbe:
         httpGet:
           path: /health
           port: liveness-port
         initialDelaySeconds: 60
-        failureThreshold: 1
-        periodSeconds: 100
+        failureThreshold: 6
+        periodSeconds: 20
       resources:
           requests:
             memory: "256Mi"
